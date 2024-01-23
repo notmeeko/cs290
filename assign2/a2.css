@@ -1,1 +1,55 @@
+#myHeader {
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    font-variant: small-caps;
+    }
 
+p.a {
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+
+.desc {
+    background-color: aquamarine;
+    }
+
+p {
+    text-align: center;
+    color: red;
+    }
+
+a[target="link"] {
+    background-color: yellow;
+    }
+
+p.b {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-style: italic; 
+    font-weight: 900;
+    line-height: 200%;
+    color:blanchedalmond
+    }
+      
+p. {
+    font: 20px Arial, sans-serif;
+    font-size: large;
+    font-style: oblique;
+    font-variant: small-caps;   
+    text-decoration: line-through;
+    color:chocolate;
+    border-left: 6px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;  
+    }
+
+div {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    }
