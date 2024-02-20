@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Demo</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .highlight {
+    background-color: yellow;
+  }
+</style>
+</head>
+<body>
+
+<div id="container">
+  <h1>Welcome to jQuery Demo</h1>
+
+  <p>This is a paragraph. Click the button to hide me!</p>
+  <button id="hideButton">Hide Paragraph</button>
+
+  <p>Hover over the text below to see see a highlight effect!</p>
+
+  <p>The following is a to-do list: <br>(Click on the item once you finish the task.) </p>
+  <ul>
+    <li>Go Shower</li>
+    <li>Brush Your Teeth</li>
+    <li>Get Dressed</li>
+    <li>Eat Breakfast</li>
+    <li>Drink Water</li>
+    <li>Brush Your Teeth</li>
+    <li>Pack Lunch and Water Bottle</li>
+    <li>Wash The Dishes</li>
+    <li>Turn Off Lights</li>
+    <li>LEAVE!!</li>
+  </ul>
+</div>
+
+<script>
+  // Hide paragraph when button is clicked
+  $(document).ready(function(){
+    $("#hideButton").click(function(){
+      $("p:first").hide();
+    });
+  });
+
+  // Add highlight effect on hover
+  $(document).ready(function() {
+    $("p:last").on({
+        mouseenter: function() {
+        $(this).toggleClass("highlight");
+        },
+    mouseleave: function() {
+      $(this).toggleClass("highlight");
+        }
+    });
+    });
+
+
+  // Change color of list items on click
+  $(document).ready(function(){
+    $("ul li").click(function(){
+      $(this).css("color", "red");
+    });
+  });
+</script>
+
+</body>
+</html>
