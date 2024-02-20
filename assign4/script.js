@@ -26,7 +26,6 @@ function addCourse() {
 }
 
 // Function to greet the user and create a person object
-// Function to greet the user and update the list of students
 function greet() {
     let name = document.getElementById("inputName").value.trim();
     let age = parseInt(document.getElementById("inputAge").value);
