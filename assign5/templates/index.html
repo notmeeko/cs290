@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web App</title>
+</head>
+<body>
+    <h1>Simple Web App</h1>
+    <form action="/write" method="post">
+        <label for="text">Text to write:</label><br>
+        <textarea id="text" name="text" rows="4" cols="50"></textarea><br>
+        <button type="submit">Write Text to File</button>
+    </form>
+    <br>
+    <button onclick="readText()">Read Text from File</button>
+    <p id="display-text"></p>
+    
+    <script>
+        function readText() {
+            fetch('/read')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("display-text").innerText = data;
+                });
+        }
+    </script>
+</body>
+</html>
