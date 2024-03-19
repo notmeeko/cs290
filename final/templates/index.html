@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Michael Angelo Bernardino</h1>
+        <h4>Undergraduate Student - Oregon State University</h4>
+        <nav>
+            <ul class = "nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="profile-info">
+                <div class="profile-picture-container">
+                    <img src="https://media.licdn.com/dms/image/D5603AQHZdFvlLsQ5YA/profile-displayphoto-shrink_800_800/0/1699597208616?e=1716422400&v=beta&t=WjADYh1zX2dfbyvL7uMePFJfU3X0aFflqB-gBHtWqUY" alt="Profile Picture" class="profile-picture">
+                </div>
+                <div class="social-icons">
+                    <!-- Add social media icons here -->
+                    <a href="https://oregonstate.edu/"><img src="https://1000logos.net/wp-content/uploads/2021/07/Oregon-State-Beavers-logo.png" alt="Beaver" class="icon"></a>
+                    <a href="https://youtube.com"><img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png" alt="Youtube" class="icon"></a>
+                    <a href="https://twitter.com/home"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png" alt="Twitter" class="icon"></a>
+                    <!-- Add more social media icons as needed -->
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique nulla aliquet enim tortor. 
+            Tellus mauris a diam maecenas. Morbi quis commodo odio aenean sed adipiscing. Cum sociis natoque penatibus et magnis dis. Id nibh tortor id aliquet lectus proin nibh nisl. 
+            Eget mi proin sed libero enim sed faucibus turpis in. Volutpat consequat mauris nunc congue nisi vitae suscipit. Elit pellentesque habitant morbi tristique senectus et netus. 
+            Magna etiam tempor orci eu lobortis elementum nibh tellus. Fames ac turpis egestas maecenas pharetra convallis posuere. Eu facilisis sed odio morbi quis commodo. 
+            Et egestas quis ipsum suspendisse ultrices gravida dictum. Morbi tempus iaculis urna id volutpat lacus. Turpis massa sed elementum tempus egestas sed sed risus pretium. 
+            Lectus urna duis convallis convallis. Gravida quis blandit turpis cursus.
+                <br><br><br>
+            Eget nunc lobortis mattis aliquam faucibus. Phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. 
+            Tortor posuere ac ut consequat semper viverra nam. Aliquam sem et tortor consequat. Proin sagittis nisl rhoncus mattis rhoncus. 
+            Volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque. Ultricies mi eget mauris pharetra et ultrices neque. Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+            Non pulvinar neque laoreet suspendisse interdum consectetur libero. Et leo duis ut diam quam nulla. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. 
+            Feugiat in fermentum posuere urna nec tincidunt praesent semper feugiat. Sed viverra tellus in hac habitasse platea dictumst vestibulum. In nisl nisi scelerisque eu ultrices.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project1">
+                <h3 style="display: inline;">1. CS361 Spotify Playlist Generator </h3> <p style="display: inline;"> - Winter 2024</p>
+                <p>A UI based playlist generator appwhere it generates a playlist based off user specifications and uploads it to Spotify! This app uses a microservice to ask the user whether they
+                   would like to create a playlist by Genre, Artist, or Related Artist!
+                </p>
+                <iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/391241/sp/39124100/embedIframeJs/uiconf_id/22119142/partner_id/391241?iframeembed=true&playerId=kaltura_player&entry_id=1_4vl01k07&flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_62w5c4o8" width="480" height="304" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" frameborder="0" title="Kaltura Capture recording - March 18th 2024, 12:03:54 am"></iframe>
+            </div>
+            <br>
+            <div class="project2">
+                <h3 style="display: inline;">2. Future Project #2 </h3> <p style="display: inline;"> - I don't know when</p>
+                <p>Ultricies mi eget mauris pharetra et ultrices neque. Mi in nulla posuere sollicitudin aliquam ultrices sagittis.
+                    Non pulvinar neque laoreet suspendisse interdum consectetur libero. Et leo duis ut diam quam nulla.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/"></iframe>
+            </div>
+            <br>
+            <div class="project3">
+                <h3 style="display: inline;">3. Future Project #3 </h3> <p style="display: inline;"> - I don't know when</p>
+                <p>Non pulvinar neque laoreet suspendisse interdum consectetur libero. Et leo duis ut diam quam nulla. Tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/"></iframe>
+            </div>
+            <!-- Add more projects here -->
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contact-form" action="/write" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="popup" class="popup">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <p id="popup-message"></p>
+            </div>            
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
